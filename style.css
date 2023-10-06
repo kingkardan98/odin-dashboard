@@ -3,3 +3,56 @@
     font-weight: normal;
     font-style: normal;
  }
+
+ body {
+    margin: 0;
+ }
+
+ .bodyGrid {
+    display: grid;
+    grid-template-columns: 20vw 80vw;
+    grid-template-rows: 20vh 150vh;
+    gap: 0px;
+ }
+
+ .latBar {
+    background-color: #1992D3;
+    grid-row: 1/3;
+    padding-top: 10px;
+    color: white;
+ }
+
+ .latBarText {
+    display: flex;
+ }
+
+ .latBarText > * {
+    padding-left: 10px;
+ }
+
+ .latBarText a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+ }
+
+ .latBarList {
+    padding-top: 20px;
+ }
+
+ .iconSmall {
+    width: 20px;
+ }
+
+ .iconBig {
+    width: 25px;
+ }
+
+ .upperBar {
+    background-color: white;
+ }
+
+ .dashboardBody {
+    background-color: #E2E8F0;
+ }
