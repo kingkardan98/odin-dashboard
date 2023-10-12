@@ -6,10 +6,13 @@
 
     <link href="https://fonts.cdnfonts.com/css/ancientsans" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
     <title>Dashboard</title>
 </head>
 <body>
     <div class="bodyGrid">
+        <!--#region Left lat-->
+        <!--Left lat-->
         <div class="latBar">
             <div class="latBarText">
                 <img src="./material/trello-svgrepo-com.svg" class="iconBig">
@@ -56,10 +59,152 @@
                 </div>
             </div>
         </div>
+        <!--#endregion-->
+        <!--#region Upper bar-->
         <div class="upperBar">
-            
+            <!--Upper section-->
+            <div class="searchBar">
+                <img src="./material/search-svgrepo-com.svg" class="iconSmall">
+                <input>
+            </div>
+            <div>
+                <button class="notifications">
+                    <img src="./material/ringing-bell-alarm-notify-svgrepo-com.svg" class="iconSmall">
+                </button>
+            </div>
+            <div>
+                <a href="">
+                    <img src="./material/bird.png" class="pfpSmall">
+                </a>
+            </div>
+            <div>
+                <h3>Mario Rossi</h3>
+            </div>
+            <!--Lower section-->
+            <div class="miniGrid">
+                <img src="./material/bird.png" class="pfpBig">
+                <div class="miniText"><p>Hi there,</p></div>
+                <div clas="miniText"><h2>Mario Rossi (@redmario)</h2></div>
+            </div>
+            <div>
+                <button class="barButton" id="new">New</button>
+            </div>
+            <div>
+                <button class="barButton" id="upload">Upload</button>
+            </div>
+            <div>
+                <button class="barButton" id="share">Share</button>
+            </div>
         </div>
-        <div class="dashboardBody"></div>
+        <!--#endregion-->
+        <!--Body section-->
+        <div class="dashboardBody">
+            <div class="bodyGridText left10">
+                <h3>Your projects</h3>
+            </div>
+            <div class="bodyGridText left-10">
+                <h3>Announcements</h3>
+            </div>
+            <!--#region Body grid-->
+            <!--Body grid-->
+            <div class="innerGrid">
+                <div class="project" id="project1">
+                    <h2>Project title</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <div class="icons">
+                        <img class="starIcon white" src="./material/white star.svg">
+                        <img class="forkIcon white" src="./material/white fork.svg">
+                        <img class="eyeIcon white" src="./material/white eye.svg">
+                    </div>
+                </div>
+                <div class="project" id="project2">
+                    <h2>Project title</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <div class="icons">
+                        <img class="starIcon white" src="./material/white star.svg">
+                        <img class="forkIcon white" src="./material/white fork.svg">
+                        <img class="eyeIcon white" src="./material/white eye.svg">
+                    </div>
+                </div>
+                <div class="project" id="project3">
+                    <h2>Project title</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <div class="icons">
+                        <img class="starIcon white" src="./material/white star.svg">
+                        <img class="forkIcon white" src="./material/white fork.svg">
+                        <img class="eyeIcon white" src="./material/white eye.svg">
+                    </div>
+                </div>
+                <div class="project" id="project4">
+                    <h2>Project title</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <div class="icons">
+                        <img class="starIcon white" src="./material/white star.svg">
+                        <img class="forkIcon white" src="./material/white fork.svg">
+                        <img class="eyeIcon white" src="./material/white eye.svg">
+                    </div>
+                </div>
+                <div class="project" id="project5">
+                    <h2>Project title</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <div class="icons">
+                        <img class="starIcon white" src="./material/white star.svg">
+                        <img class="forkIcon white" src="./material/white fork.svg">
+                        <img class="eyeIcon white" src="./material/white eye.svg">
+                    </div>
+                </div>
+                <div class="project" id="project6">
+                    <h2>Project title</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <div class="icons">
+                        <img class="starIcon white" src="./material/white star.svg">
+                        <img class="forkIcon white" src="./material/white fork.svg">
+                        <img class="eyeIcon white" src="./material/white eye.svg">
+                    </div>
+                </div>
+            </div>
+            <!--#endregion-->
+            <!--#region Lateral grid-->
+            <!--Lateral grid-->
+            <div class="lateralGrid">
+                <div class="lateralTab">
+                    <div class="lateralText">
+                        Big announcement today: free wifi for thirty seconds, and a micrometer-thick slice of pizza!
+                        <hr />
+                        Love the energy in the building today, feels like a dream!
+                        <hr />
+                        "With this AI bullcrap, anybody will be able to generate quotes from anyone!" - Abe Lincoln
+                    </div>
+                </div>
+                <div class="bodyGridText">
+                    <h3>Trending</h3>
+                </div>
+                <div class="lateralTab" id="trending">
+                    <div class="person">
+                        <div class="colorPfp pfpSmall"></div>
+                        <div class="personDesc">
+                            <h3>@Notabot</h3>
+                            <p>Stronge boi</p>
+                        </div>
+                    </div>
+                    <div class="person">
+                        <div class="colorPfp pfpSmall"></div>
+                        <div class="personDesc">
+                            <h3>@Definetelynotabot</h3>
+                            <p>Strongere boi</p>
+                        </div>
+                    </div>
+                    <div class="person">
+                        <div class="colorPfp pfpSmall"></div>
+                        <div class="personDesc">
+                            <h3>@BOTAPPLEJEANS</h3>
+                            <p>BOOTS WITH THE FUR</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--#endregion-->
+        </div>
     </div>
 </body>
 </html>
